@@ -123,6 +123,10 @@ for(var i=0; i<availableLoans.length; i++){
 	let button = document.createElement("button");
 	li.innerText = availableLoans[i];
 	button.appendChild(document.createTextNode("Lend"));
+	let text = availableLoans[i];
+	button.onclick =function(){
+	    alert(text);
+	}
 	list.appendChild(li);
 	list.appendChild(button);
 }
