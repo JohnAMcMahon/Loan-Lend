@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Loan-Lend</title>
+<h1>Loan-lend:</h1>
+</head>
+<body>
+<ul id="loans"></ul>
+<button id="make a loan">Click here to make a loan!</button>
+<br>
+<button id="phishing">Report Phishing</button>
+
+
+
+
+<script>
+alert("Loan lend is a lending app that allows you to lend and borrow money while cutting the middleman. Please do due dilegence while borrowing/lending and don't get scamed");
+var availableLoans = [];
+availableLoans.push("Name Amount Interest");
+
+availableLoans.push("Bob $1000 1.07%");
+availableLoans.push("Steve $1000 1.07%");
+availableLoans.push("Sam $1000 1.07%");
+availableLoans.push("Phil $10000 2.07%");
+let list = document.getElementById("loans");
+for(var i=0; i<availableLoans.length; i++){
+	let li = document.createElement("li");
+	li.innerText = availableLoans[i];
+	list.appendChild(li);
+}
+const input = document.createElement("input");
+input.setAttribute("type", "text");
+input.setAttribute("text", "enter amount");
+document.body.appendChild(input);
+
+
+
+
+
+</script>
+<p>About Us<br>
+Loan-Lend was created as an alternative to banks and credit unions to cut out the middleman and allow individuals to borrow and loan money while reaping the most benifit.<br>
+Loan-Lend takes an invisable hand/grass roots approch to credit<br>
+Individuals can loan to other individuals, companies and organizaions.
+Loan-Lend creates a whole marketplace of credit where both parties reap the most benifit!
+</p>
+</body>
+</html>
+
